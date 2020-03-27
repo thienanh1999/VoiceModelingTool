@@ -18,6 +18,7 @@ class App():
         file = open(topic_name + '/' + 'article.txt', 'r')
         content = file.read()
         self.sentences = content.split('\n')
+        self.sentences.pop(0)
         self.current_sentence = -1
 
 
